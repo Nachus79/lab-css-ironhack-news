@@ -177,3 +177,60 @@ header {
 }
   
 /* Write your CSS below */
+
+                                                      /*ITERATION 1*/
+
+@media (width < 760px) {
+
+      .navbar {
+              display: flex;
+              flex-direction: column; 
+            
+               } 
+      .navbar li {
+                width: 100%;
+                border-top: 1px solid #ffffff;
+                }
+      
+      .articles-container {
+                display: flex; 
+                flex-direction: column;
+                flex-grow: 4;
+                          }
+      
+      .main-article {
+                 display: flex; 
+                 flex-direction: column;
+                 
+                 
+                    }
+
+      .main-article .image, .content {
+                                      align-self: center; 
+                                     } 
+                     
+      
+
+       } 
+     
+                                                                /*ITERATION 2*/
+
+@media (width > 760px) and (width < 1024) {
+
+      .navbar {
+                display: flex;
+                flex-direction: column; 
+  
+              } 
+
+  
+}
+
+
+
+
+
+
+
+}
+/* Write your CSS below */
