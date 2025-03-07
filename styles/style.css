@@ -178,59 +178,106 @@ header {
   
 /* Write your CSS below */
 
-                                                      /*ITERATION 1*/
 
-@media (width < 760px) {
+/* ITERACIÓN 1: PANTALLAS INFERIORES A 760PX */
 
-      .navbar {
-              display: flex;
-              flex-direction: column; 
-            
-               } 
-      .navbar li {
-                width: 100%;
-                border-top: 1px solid #ffffff;
-                }
-      
-      .articles-container {
-                display: flex; 
-                flex-direction: column;
-                flex-grow: 4;
-                          }
-      
-      .main-article {
-                 display: flex; 
-                 flex-direction: column;
-                 
-                 
-                    }
-
-      .main-article .image, .content {
-                                      align-self: center; 
-                                     } 
-                     
-      
-
-       } 
-     
-                                                                /*ITERATION 2*/
-
-@media (width > 760px) and (width < 1024) {
-
-      .navbar {
-                display: flex;
-                flex-direction: column; 
+@media (max-width: 760px) {
   
-              } 
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
 
-  
+  .navbar li {
+    width: 100%;
+    border-top: 1px solid #ffffff;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;  
+    object-fit: cover; 
+  }
+
+  .main-article .image, 
+  .main-article .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .btn {
+    width: 100%; 
+  }
 }
 
+/* ITERACIÓN 2: PARA PANTALLAS DE ENTRE 760 Y 1024PX */
 
+@media (min-width: 760px) and (max-width: 1024px) {
+ 
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 
+  .navbar li {
+    width: auto;
+    border-right: 1px solid #ffffff;
+  }
 
+  .navbar li:last-child {
+    border-right: none;
+  }
 
+ 
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .main-article .image {
+    width: 50%;
+    padding: 0 20px;
+  }
 
+  .main-article .content {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .main-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%; /* SI PONGO 50% NO TERMINA DE ENCAJAR */
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
 }
-/* Write your CSS below */
+
