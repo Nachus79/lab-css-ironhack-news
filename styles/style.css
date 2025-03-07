@@ -192,38 +192,38 @@ header {
     width: 100%;
     border-top: 1px solid #ffffff;
   }
- 
+
   .articles-container {
     display: flex;
     flex-direction: column;
     flex-grow: 4;
   }
- 
+
   .main-article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%; 
     margin-bottom: 20px;
   }
 
   .main-article img {
-    width: 100%;
+    width: 100%; 
     height: auto;
-    max-width: 100%;  
     object-fit: cover;
   }
 
   .main-article .image,
   .main-article .content {
-    width: 100%;
+    width: 100%; 
     padding: 0 20px;
   }
 
   .btn {
     width: 100%; 
   }
-
+  
   .article,
   .main-article {
     width: 100%; 
